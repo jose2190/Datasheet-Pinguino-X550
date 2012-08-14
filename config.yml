@@ -14,8 +14,12 @@ book:
         # tables), part, preface, prologue, title, toc (table of contents)
         - { element: cover }
         - { element: toc   }
-        - { element: chapter, number: 1, content: chapter1.md }
-        - { element: chapter, number: 2, content: chapter2.md }
+        - { element: chapter, number: 1, content: 01-vista-general.md }
+        - { element: chapter, number: 2, content: 02-configuracion-del-oscilador.md }
+        - { element: chapter, number: 3, content: 03-alimentacion.md }
+        - { element: chapter, number: 4, content: 04-reset.md }
+        - { element: chapter, number: 5, content: 05-organizacion-de-la-memoria.md }
+        - { element: chapter, number: 6, content: 06-memoria-flash.md }
 
     editions:
         ebook:
@@ -43,7 +47,7 @@ book:
             theme:          clean
             toc:
                 deep:       2
-                elements:   ["appendix", "chapter", "part"]
+                elements:   ["appendix", "chapter", "part","figure", "table"]
             two_sided:      false
 
         web:
